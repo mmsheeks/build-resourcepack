@@ -1,0 +1,13 @@
+name: 'Build Resourcepack'
+description: 'Build a resource pack from the repository root and publish a release version'
+inputs:
+  pack-name:
+    description: 'The output filename'
+    required: false
+    default: 'resourcepack.zip'
+outputs:
+  release:
+    description: 'The release URL for the build'
+runs:
+  using: 'node20'
+  main: 'index.js'
